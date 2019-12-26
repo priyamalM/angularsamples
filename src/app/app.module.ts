@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,6 +10,7 @@ import { TestDirectiveComponent } from './directives/test-directive/test-directi
 import { BasicHighlightDirective } from './directives/basic-highlight/basic-highlight.directive';
 import { BetterHighlightDirective } from './directives/better-highlight/better-highlight.directive';
 import { UnlessDirective } from './directives/unless.directive';
+import { ReactivedrivenformComponent } from './reactivedriven/reactivedrivenform/reactivedrivenform.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +19,14 @@ import { UnlessDirective } from './directives/unless.directive';
     TestDirectiveComponent,
     BasicHighlightDirective,
     BetterHighlightDirective,
-    UnlessDirective
+    UnlessDirective,
+    ReactivedrivenformComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
